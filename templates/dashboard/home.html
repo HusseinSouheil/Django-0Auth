@@ -1,0 +1,13 @@
+{% extends 'account/base.html' %}
+
+{% block content %}
+<!-- this is a home page you have to sign in first to login to it -->
+    <div class="text-center">
+        <h2>Home</h2>
+        <p>Hello {{ user.first_name }}!</p>
+        <p>Your Username : {{ user }}</p>
+        <a class="btn btn-dark" href="{% url 'socialaccount_connections' %}">Settings</a>
+    </div>
+
+
+{% endblock %}
